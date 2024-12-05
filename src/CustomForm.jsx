@@ -12,6 +12,27 @@ const ExtensionCommandType = {
   SetIframeStyle: "EXTENSION:SET_IFRAME_STYLE",
 };
 
+
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+function showLoadingIndicator() {
+  extensionService.post({
+    type: ExtensionCommandType.ShowLoadingIndicator,
+    payload: { show: true },
+  });
+}
+
+function hideLoadingIndicator() {
+  extensionService.post({
+    type: ExtensionCommandType.ShowLoadingIndicator,
+    payload: { show: false },
+  });
+}
+
 async function sendMessage() {
   window.top.postMessage(
     "hide-checkout-shipping-continue",
