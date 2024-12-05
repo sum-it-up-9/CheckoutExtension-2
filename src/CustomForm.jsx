@@ -82,8 +82,7 @@ const CustomForm = () => {
 
       await getCustomerPriceListType(cartId);     
 
-      setCheckoutid(cartId);
-
+     
       try {
         extensionService = await module.initializeExtensionService({
           extensionId,
