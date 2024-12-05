@@ -1,5 +1,6 @@
-import CustomForm from './customForm'
+
 import './App.css'
+import CustomForm from './CustomForm'
 
 function App() {
  
