@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: fit-content;
+    min-height: 130px;
+}
+
+.error-container {
+    background-color: #ffe6e6;
+    border: 1px solid #ff3333;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.case-restriction { 
+    color: #d5a26e;
+    font-weight: 550;
+    margin-left: 5px; /* Add a little space between the text and restriction */
+  }
+
+  /* Media Query for Mobile Devices (max-width 600px) */
+@media (max-width: 600px) {
+    .case-restriction {
+      font-size: 0.9rem; /* Decrease the font size of the case restriction */
+    }
+  }
